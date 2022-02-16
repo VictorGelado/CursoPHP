@@ -10,16 +10,14 @@
 <div>
 	<?php 
 		$num = isset($_GET['num'])? $_GET['num']: 1;
-		$c = 1;
 
 		echo "<h1>Mostrando a tabuada de $num</h1>";
 
-		do {
-			$r = $num * $c;
-			echo "<p>$num x $c = $r</p>";
-			$c++;
-		} while ($c <= 10);
+		for ($c = 1; $c <= 10; $c++) {
+			$r = $c * $num;
+			echo "<p>$c x $num = $r</p>";
+		}		
 	?>
-	<a href="./03-exercicio-form.php"><button>Voltar</button></a>
+	<a href="./02-exercicio-form.php"><button>Voltar</button></a>
 </div>	
 </body>
