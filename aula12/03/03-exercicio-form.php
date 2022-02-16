@@ -9,7 +9,17 @@
 <body>
 <div>
 	<form method="get" action="03-exercicio.php">
-		
+		<label>Número: </label>
+		<select name="num">
+			<?php
+				$c = 1;
+				do {
+					echo "<option value='$c'>$c</option>";
+					$c++;
+				} while ($c <= 10);
+			?>
+		</select>
+		<button type="submit">Tabuada</button>
 	</form>
 </div>	
 </body>
